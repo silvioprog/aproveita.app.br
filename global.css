@@ -1,0 +1,86 @@
+body {
+  font-size: 0.875rem;
+}
+
+/* Issue #21943: https://github.com/twbs/bootstrap/issues/21943 */
+
+@media (max-width: 575.98px) {
+  .w-xs-100 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}
+
+.bg-black-50 {
+  background-color: #eeeeee !important;
+  border-color: #eeeeee !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.hide-spin-button::-webkit-outer-spin-button,
+.hide-spin-button::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.hide-spin-button[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.overlay {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.bg-hint {
+  background-color: #ffdb70 !important;
+}
+
+.bi-py-auto::before {
+  vertical-align: middle;
+  margin-bottom: 0.2rem !important;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link {
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .sidebar .nav-link.active {
+  color: inherit;
+}
